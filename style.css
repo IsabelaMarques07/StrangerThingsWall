@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.76), #ecb48c);
+    font-family: 'Lacquer', cursive;
+}
+
+.alphabet{
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+.line-1, .line-2, .line-3{
+    display:flex;
+    width: 70vw;
+    justify-content: space-between;
+    font-size: 14vh;
+    font-weight: 600;
+    margin-left: 15vw;
+}
+
+.light{
+    background-color: aquamarine;
+    height: 5vh;
+    width: 1.3vw;
+    margin-bottom: -3vh;
+    border-radius: 50%;
+    position: relative;
+}
+
+.yellow{
+    background-color: #E4E82E;
+    animation: glow-yellow 0.56s infinite;
+}
+.blue{
+    background-color: #3E74FF;
+    animation: glow-blue 0.58s infinite;
+}
+.pink{
+    background-color: #FF2FDE;
+    animation: glow-pink 0.70s infinite;
+}
+.green{
+    background-color: #48E82E;
+    animation: glow-green 0.53s infinite;
+}
+.purple{
+    background-color: #B53DFF;
+    animation: glow-purple 0.48s infinite;
+}
+.red{
+    background-color: #FF2F54;
+    animation: glow-red 0.50s infinite;
+}
+
+
+.light:before{
+    position: absolute;
+    content: '';
+    height: 2.5vh;
+    width: 1.5vw;
+    top: -0.5vh;
+    left: -0.1vw;
+    border-radius: 45% 45% 10% 10% ;
+    background-color: #C4C4C4;
+    z-index: 1000;
+}
+.light:after{
+    position: absolute;
+    content: '';
+    width: 8.4vw;
+    height: 6vh;
+    top: -3.8vh;
+    left: 0.3vw;
+    box-shadow: 0  .4vw 0.4vh  #3d3d3d3a;
+    border-bottom: solid rgb(24, 24, 24) 3px;
+    border-radius: 50%;
+}
+.line-1 .light:after{
+    width: 9vw;
+    height: 6vh;
+    top: -4vh;
+    left: 0.9vw;
+    border-radius: 50%;
+}
+.letter:last-child .light:after {
+    content: '';
+    position: absolute;
+    border: none;
+    box-shadow: none;
+}
+
+.letter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background-color: #6C2E00;
+    height: 20vh;
+    width: 100vw;
+}
+
+.wood-detail{
+    display:flex;
+    justify-content: space-between;
+}
+.border{
+    width: 100vw;
+    height: 3vh;
+    background-color: #451D00;
+    box-shadow: .8vw .8vh .8vw  .8vh #00000073;
+}
+.line{
+    height: 17vh;
+    width: 0.5vw;
+    background-color: #3f1a00;
+}
+
+
+/* animations  */
+@keyframes glow-yellow {
+    0%{
+        box-shadow: 0 0 2vw 2vh #E4E82E;
+        background-color: #E4E82E;
+    }
+    100%{
+        background-color: #563260;
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 2vw 2vh #E4E82E;
+        background-color:  #fdff9e;
+    }
+}
+@keyframes glow-blue {
+    0%{
+        box-shadow: 0 0 2vw 2vh#3E74FF;
+        background-color: #3E74FF;
+    }
+    100%{
+        background-color: #563260;
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 2vw 2vh#3E74FF;
+        background-color: #638fff;
+    }
+}
+@keyframes glow-pink {
+    0%{
+        box-shadow: 0 0 2vw 2vh #FF2FDE;
+        background-color:  #FF2FDE;
+    }
+    100%{
+        background-color: #563260;
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 2vw 2vh #FF2FDE;
+        background-color: #ff70e7;
+    }
+}
+@keyframes glow-green {
+    0%{
+        box-shadow: 0 0 2vw 2vh #48E82E;
+        background-color: #48E82E;
+    }
+    100%{
+        background-color: #563260;
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 2vw 2vh #48E82E;
+        background-color:  #86ff73;
+    }
+}
+@keyframes glow-purple {
+    0%{
+        box-shadow: 0 0 2vw 2vh  #B53DFF;
+        background-color: #B53DFF;
+    }
+    100%{
+        background-color: #563260;
+        box-shadow: none;
+    }
+    50%{
+        box-shadow:  0 0 2vw 2vh  #B53DFF;
+        background-color:  #c86fff;
+    }
+}
+@keyframes glow-red {
+    0%{
+        box-shadow: 0 0 2vw 2vh #FF2F54;
+        background-color: #FF2F54;
+    }
+    100%{
+        background-color: #563260;
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 2vw 2vh #FF2F54;
+        background-color:  #ff6682;
+    }
+}
