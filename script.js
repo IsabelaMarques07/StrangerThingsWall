@@ -1,8 +1,8 @@
 const lights = document.getElementsByClassName('light')
 
-const colors = ["yellow", "blue", "pink", "green", "purple", "yellow", "red", "green", " ","green", "pink", "blue", "purple", "yellow", "red", "pink", "blue", "red", "purple", "red", "yellow", "green", "pink", "blue", "green", "purple", "yellow"]
+const colors = ["yellow", "blue", "pink", "green", "purple", "yellow", "red", "green", "green", "pink", "blue", "purple", "yellow", "red", "pink", "blue", "red", "purple", "red", "yellow", "green", "pink", "blue", "green", "purple", "yellow"]
 
-const letters = ["A", "B", "C", "D", "E","F", "G","H"," ", "I","J", "K","L", "M","N", "O","P", "Q","R", "S","T", "U","V", "W","X", "Y","Z"]
+const letters = ["A", "B", "C", "D", "E","F", "G","H", "I","J", "K","L", "M","N", "O","P", "Q","R", "S","T", "U","V", "W","X", "Y","Z"]
 
 document.querySelector('body').addEventListener('keydown', function(event) {
     let position = event.keyCode - 65
@@ -27,8 +27,8 @@ function off(){
 var aux = 0;
 for(var i = 1; i <= 3; i++){
 
-    for(var j = aux; j < 9+ aux; j++){
-        if(letters[j] != " "){
+    for(var j = aux -1 ; j < 8+ aux; j++){
+        if(j >= 0){
             var div = document.createElement("div")
             div.setAttribute("class", "letter")
         
