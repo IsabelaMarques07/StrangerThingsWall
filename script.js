@@ -12,9 +12,9 @@ document.querySelector('body').addEventListener('keydown', function(event) {
 });
 
 function on(position, color){
-    lights[position].style.animation = ""
-    setTimeout(()=> lights[position].style.animation = color + " 1.5s linear", 1)
     off()
+    setTimeout(()=> lights[position].style.animation = color + " 1.5s linear")
+
 }
 
 function off(){
