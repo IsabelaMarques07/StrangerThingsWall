@@ -13,6 +13,7 @@
 </p>
 
 ## Caso queira entender como construi a aplicação
-🚲 Criei um conjunto de 6 posts que ensinam a criar a StrangerThingsWall do zero
+🚲 Criei um conjunto de 6 posts que ensinam a criar a StrangerThingsWall do zero 
+
 🚲 Link do primeiro post: https://www.instagram.com/p/CN5cTNygBes/
 
