@@ -12,3 +12,7 @@
   <img src="https://github.com/IsabelaMarques07/StrangerThingsWall/blob/master/st-wall2.gif?raw=true" width="1000px">
 </p>
 
+## Caso queira entender como construi a aplicação
+🚲 Criei um conjunto de 6 posts que ensinam a criar a StrangerThingsWall do zero
+🚲 Link do primeiro post: https://www.instagram.com/p/CN5cTNygBes/
+
